@@ -3,6 +3,7 @@ import Link from "next/link";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
+import { BsSunFill } from "react-icons/bs";
 
 const Nav = () => {
   const { systemTheme, theme, setTheme } = useTheme();
@@ -17,8 +18,8 @@ const Nav = () => {
 
     if (currentTheme === "dark") {
       return (
-        <BsFillMoonStarsFill
-          className="h-5 w-5 text-white "
+        <BsSunFill
+          className="h-5 w-5 text-white hover:rotate-3"
           role="button"
           onClick={() => setTheme("light")}
         />
@@ -26,7 +27,7 @@ const Nav = () => {
     } else {
       return (
         <BsFillMoonStarsFill
-          className="h-5 w-5 text-black "
+          className="h-5 w-5 text-black hover:rotate-3"
           role="button"
           onClick={() => setTheme("dark")}
         />
@@ -34,34 +35,40 @@ const Nav = () => {
     }
   };
   return (
-    <div className="mx-auto mt-5 hidden max-w-5xl text-lg font-light sm:flex">
+    <div className="app-top-lvl mx-auto hidden max-w-5xl pt-5 text-lg font-light sm:flex">
       <div>
-        <Link
-          className="group text-white transition-all duration-300 ease-in-out"
-          href="/"
-        >
-          <span className="bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-left-bottom bg-no-repeat font-medium transition-all duration-500 ease-out group-hover:bg-[length:100%_2px] ">
+        <Link className="group text-black dark:text-white" href="/">
+          <span className="bg-gradient-to-r from-black to-black bg-[length:0%_2px] bg-left-bottom bg-no-repeat font-medium transition-all duration-500 ease-out group-hover:bg-[length:100%_2px] dark:from-white dark:to-white">
             AJH
           </span>
         </Link>
       </div>
       <div className="mx-auto lg:ml-auto lg:mr-64">
-        <Link className="p-10 hover:text-gray-300" href="/about">
+        <Link
+          className="p-10 text-black dark:text-white dark:hover:text-gray-300"
+          href="/about"
+        >
           About
         </Link>
-        <Link className="hover:text-gray-300" href="/projects">
+        <Link
+          className="text-black dark:text-white dark:hover:text-gray-300"
+          href="/projects"
+        >
           Projects
         </Link>
-        <Link className="p-10 hover:text-gray-300" href="/blog">
+        <Link
+          className="p-10 text-black dark:text-white dark:hover:text-gray-300"
+          href="/blog"
+        >
           Blog
         </Link>
       </div>
       <div className="mr">
         <Link
-          className="group ml-auto text-white transition-all duration-300 ease-in-out"
+          className="group ml-auto text-black dark:text-white"
           href="/contact"
         >
-          <span className=" bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-left-bottom bg-no-repeat font-medium transition-all duration-500 ease-out group-hover:bg-[length:100%_2px]">
+          <span className=" bg-gradient-to-r from-black to-black bg-[length:0%_2px] bg-left-bottom bg-no-repeat font-medium transition-all duration-500 ease-out group-hover:bg-[length:100%_2px] dark:from-white dark:to-white">
             Contact
           </span>
         </Link>

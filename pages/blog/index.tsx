@@ -4,7 +4,7 @@ import styles from "../../styles/Home.module.css";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className="app-top-lvl">
       <Nav />
     </div>
   );

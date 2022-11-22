@@ -3,9 +3,13 @@
 @tailwind utilities;
 
 @layer base {
-  body {
-    @apply bg-gray-50 text-gray-900 dark:bg-black dark:text-gray-100;
-    @apply min-h-screen;
+  .app-top-lvl {
+    @apply bg-white text-gray-900 dark:bg-black dark:text-gray-100;
+  }
+
+  body,
+  html {
+    @apply bg-white dark:min-h-screen dark:bg-black;
   }
 
   ::selection {
