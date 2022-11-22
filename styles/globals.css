@@ -28,3 +28,40 @@ a {
     background: black;
   }
 }
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(10%);
+    opacity: 0%;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 100%;
+  }
+}
+
+.hero-details {
+  animation: slideInFromBottom 0.75s ease-in-out;
+}
+
+.action-outline-btn:hover {
+  transition: 0.3s;
+}
+
+/* arrow animate side to side */
+
+@keyframes arrow {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.my-work-arrow:hover {
+  animation: arrow 1s ease-in-out infinite;
+}

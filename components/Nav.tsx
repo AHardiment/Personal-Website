@@ -1,35 +1,39 @@
 import React from "react";
+import Link from "next/link";
 
 const Nav = () => {
   return (
-    <div className="flex max-w-5xl mt-5 text-lg font-light items mx-auto">
+    <div className="mx-auto mt-5 flex max-w-5xl text-lg font-light">
       <div>
-        <a
-          className="group text-whitetransition-all duration-300 ease-in-out"
-          href="#"
+        <Link
+          className="group text-white transition-all duration-300 ease-in-out"
+          href="/"
         >
-          <span className="bg-left-bottom bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+          <span className="bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-left-bottom bg-no-repeat font-medium transition-all duration-500 ease-out group-hover:bg-[length:100%_2px] ">
             AJH
           </span>
-        </a>
+        </Link>
       </div>
       <div className="mx-auto">
-        <a className="hover:text-gray-300 pr-10" href="#">
+        <Link className="pr-10 hover:text-gray-300" href="/about">
           About
-        </a>
-        <a className="hover:text-gray-300" href="#">
+        </Link>
+        <Link className="hover:text-gray-300" href="/projects">
           Projects
-        </a>
+        </Link>
+        <Link className="pl-10 hover:text-gray-300" href="/blog">
+          Blog
+        </Link>
       </div>
       <div>
-        <a
-          className="group text-whitetransition-all duration-300 ease-in-out"
-          href="#"
+        <Link
+          className="text-whitetransition-all group duration-300 ease-in-out"
+          href="/contact"
         >
-          <span className="bg-left-bottom bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+          <span className=" bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-left-bottom bg-no-repeat font-medium transition-all duration-500 ease-out group-hover:bg-[length:100%_2px]">
             Contact
           </span>
-        </a>
+        </Link>
       </div>
     </div>
   );
