@@ -5,17 +5,16 @@ import heroimg from "../public/hero-img.jpeg";
 const Hero = () => {
   return (
     <div className="hero-details mx-auto h-full max-w-6xl items-center">
-      {/* <div className="left-50 absolute top-64 h-72 w-72 rounded-full bg-blue-400 opacity-70 blur-2xl filter"></div> */}
-      {/* <div className="absolute top-64 left-96 h-72 w-72 rounded-full bg-blue-400 opacity-70 blur-2xl filter"></div> */}
-      {/* <div className="absolute left-72 top-80 h-72 w-72 rounded-full bg-orange-500 opacity-70 blur-2xl filter"></div> */}
-      <section className="relative mt-32 h-full">
+      <section className="relative mt-16 h-full md:mt-32">
         <div className="mx-auto grid max-w-screen-xl px-4 py-8 lg:grid-cols-12 lg:gap-8 lg:py-16 xl:gap-0">
           <div className="mr-auto place-self-center lg:col-span-7">
-            <h1 className="relative mb-4 max-w-2xl text-8xl font-extrabold leading-none tracking-tight dark:text-white md:text-5xl xl:text-8xl">
+            <h1 className="relative mb-4 max-w-2xl text-6xl font-extrabold leading-none tracking-tight text-black dark:text-white md:text-5xl xl:text-8xl">
               Alex Hardiment
             </h1>
-            <p className="mb-6 max-w-2xl font-light text-gray-500 dark:text-gray-200 md:text-lg lg:mb-8 lg:text-xl">
+            <p className="mb-2 max-w-2xl font-light text-black dark:text-gray-200 md:mb-6 md:text-lg lg:mb-1 lg:text-xl">
               I am Alex, a full-stack web developer based in Manchester, UK ☔️
+            </p>
+            <p className="mb-10 max-w-2xl font-light text-black dark:text-gray-200 md:mb-6 md:text-lg lg:mb-8 lg:text-xl">
               I love building dynamic web apps in{" "}
               <span className=" text-blue-400">React</span>,{" "}
               <span className="text-green-400">NodeJS</span>,{" "}
@@ -24,7 +23,7 @@ const Hero = () => {
             </p>
             <a
               href="#"
-              className="my-work-arrow bg-primary-700 hover:bg-primary-800 focus:ring-primary-300 dark:focus:ring-primary-900 mr-3 inline-flex items-center justify-center rounded-lg px-5 py-3 text-center text-base font-medium text-white focus:ring-4"
+              className="my-work-arrow bg-primary-700 hover:bg-primary-800 focus:ring-primary-300 dark:focus:ring-primary-900 mr-3 inline-flex items-center justify-center rounded-lg px-5 py-3 text-center text-base font-medium text-black focus:ring-4 dark:text-white"
             >
               My work
               <svg
@@ -47,9 +46,14 @@ const Hero = () => {
               Get in Touch
             </a>
           </div>
-          <div className="hidden justify-end lg:col-span-5 lg:mt-0 lg:flex">
+          <div className="relative hidden justify-end lg:col-span-5 lg:mt-0 lg:flex">
             <Image
-              className=" w-96 object-scale-down "
+              className=" w-96 animate-blob opacity-50 blur-2xl md:object-scale-down "
+              src={heroimg}
+              alt="hero"
+            />
+            <Image
+              className="absolute w-96 object-scale-down "
               src={heroimg}
               alt="hero"
             />
