@@ -9,7 +9,7 @@ const Hero = () => {
       <section className="mx-auto mt-16">
         <div className="mx-auto grid max-w-screen-xl px-4 py-8 lg:grid-cols-12 lg:gap-8 lg:py-16 xl:gap-0">
           <div className="mr-auto place-self-center lg:col-span-7">
-            <h1 className="relative mb-4 max-w-2xl pr-10 text-6xl font-extrabold leading-none tracking-tight text-black dark:text-white md:text-5xl xl:text-8xl">
+            <h1 className="relative mb-4 max-w-2xl pr-10 text-5xl font-extrabold leading-none tracking-tight text-black dark:text-white md:text-6xl xl:text-8xl">
               Alex Hardiment
             </h1>
             <p className="mb-2 max-w-2xl font-light text-black dark:text-gray-200 md:mb-6 md:text-lg lg:mb-1 lg:text-xl">
@@ -49,7 +49,7 @@ const Hero = () => {
               </a>
             </div>
           </div>
-          <div className="relative hidden justify-end lg:col-span-5 lg:mt-0 lg:flex">
+          <div className="relative ml-auto hidden justify-between lg:col-span-5 lg:mt-0 lg:flex">
             <Image
               className=" w-96 animate-blob opacity-50 blur-2xl md:object-scale-down "
               src={heroimg}
