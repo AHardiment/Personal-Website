@@ -1,6 +1,5 @@
-import Hero from "../../components/Hero";
 import Nav from "../../components/Nav";
-import styles from "../../styles/Home.module.css";
+import posts from "../../posts/posts.json";
 
 export default function Home() {
   return (

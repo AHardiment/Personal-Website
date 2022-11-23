@@ -67,6 +67,10 @@ a {
   animation: slideInFromBottom 0.75s ease-in-out;
 }
 
+.blog-details {
+  animation: slideInFromBottom 0.75s ease-in-out;
+}
+
 .action-outline-btn:hover {
   transition: 0.3s;
 }

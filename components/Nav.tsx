@@ -19,7 +19,7 @@ const Nav = () => {
     if (currentTheme === "dark") {
       return (
         <BsSunFill
-          className="h-5 w-5 text-white hover:rotate-3"
+          className="h-5 w-5 text-white hover:rotate-6"
           role="button"
           onClick={() => setTheme("light")}
         />
@@ -27,7 +27,7 @@ const Nav = () => {
     } else {
       return (
         <BsFillMoonStarsFill
-          className="h-5 w-5 text-black hover:rotate-3"
+          className="h-5 w-5 text-black hover:rotate-6"
           role="button"
           onClick={() => setTheme("dark")}
         />
@@ -35,7 +35,7 @@ const Nav = () => {
     }
   };
   return (
-    <div className="app-top-lvl mx-auto hidden max-w-5xl pt-5 text-lg font-light sm:flex">
+    <div className="app-top-lvl mx-auto hidden pt-5 text-lg font-light sm:max-w-xl md:flex md:max-w-2xl lg:max-w-5xl">
       <div>
         <Link className="group text-black dark:text-white" href="/">
           <span className="bg-gradient-to-r from-black to-black bg-[length:0%_2px] bg-left-bottom bg-no-repeat font-medium transition-all duration-500 ease-out group-hover:bg-[length:100%_2px] dark:from-white dark:to-white">
