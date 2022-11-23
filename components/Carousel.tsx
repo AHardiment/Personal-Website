@@ -36,10 +36,10 @@ const Carousel = () => {
           <Image src={carouselImg3} alt="Image of Alex" className="w-72" />
         </Slide>
       </Slider>
-      <ButtonBack className="mt-3 mr-3 rounded-xl border p-2 outline-1">
+      <ButtonBack className="mt-3 mr-3 rounded-xl border border-black p-2 outline-1 hover:bg-black hover:text-white hover:duration-200  hover:ease-in dark:border-white dark:hover:bg-white dark:hover:text-black">
         ← Back
       </ButtonBack>
-      <ButtonNext className=" rounded-xl border p-2 outline-1">
+      <ButtonNext className="mt-3 mr-3 rounded-xl border border-black p-2 outline-1 hover:bg-black hover:text-white  hover:duration-200 hover:ease-in dark:border-white dark:hover:bg-white dark:hover:text-black">
         Next →
       </ButtonNext>
     </CarouselProvider>

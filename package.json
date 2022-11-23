@@ -21,6 +21,7 @@
     "pure-react-carousel": "^1.30.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-hook-form": "^7.39.5",
     "react-icons": "^4.6.0",
     "react-modal-image": "^2.6.0",
     "typescript": "4.9.3"
