@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import heroimg from "../public/hero-img.jpeg";
 import { FaReact } from "react-icons/fa";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -23,9 +24,9 @@ const Hero = () => {
               <span className="font-medium text-blue-300">Tailwind</span>.
             </p>
             <div className="w-full">
-              <a
-                href="#"
-                className="my-work-arrow bg-primary-700 hover:bg-primary-800 focus:ring-primary-300 dark:focus:ring-primary-900 inline-flex items-center justify-center rounded-lg px-5 py-3 text-center text-xl text-base font-medium text-black focus:ring-4 dark:text-white md:mr-3"
+              <Link
+                href="/projects"
+                className="my-work-arrow bg-primary-700 hover:bg-primary-800 focus:ring-primary-300 dark:focus:ring-primary-900 inline-flex items-center justify-center rounded-lg px-5 py-3 text-center text-xl font-medium text-black focus:ring-4 dark:text-white md:mr-3"
               >
                 My work
                 <svg
@@ -40,13 +41,13 @@ const Hero = () => {
                     clip-rule="evenodd"
                   ></path>
                 </svg>
-              </a>
-              <a
-                href="#"
-                className="action-outline-btn inline-flex items-center justify-center rounded-lg border border-gray-300 px-5 py-3 text-center text-xl text-base font-medium text-gray-900 hover:bg-blue-400 focus:ring-4 focus:ring-gray-100 dark:border-gray-700 dark:text-white dark:hover:bg-blue-600 dark:focus:ring-gray-800"
+              </Link>
+              <Link
+                href="/contact"
+                className="action-outline-btn inline-flex items-center justify-center rounded-lg border border-gray-300 px-5 py-3 text-center text-xl font-medium text-gray-900 hover:bg-blue-400 focus:ring-4 focus:ring-gray-100 dark:border-gray-700 dark:text-white dark:hover:bg-blue-600 dark:focus:ring-gray-800"
               >
                 Get in Touch
-              </a>
+              </Link>
             </div>
           </div>
           <div className="relative ml-auto hidden justify-between lg:col-span-5 lg:mt-0 lg:flex">

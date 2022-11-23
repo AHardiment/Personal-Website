@@ -17,7 +17,7 @@ const AboutDetails = () => {
           programming once more.
         </p>
         <p className="text-justify md:mt-3 md:text-2xl">
-          This site is a glimpse at my journey.
+          This site is a glimpse at that journey.
         </p>
       </div>
       <Carousel />

@@ -2,7 +2,6 @@ import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
 const dotenv = require("dotenv");
-dotenv.config();
 
 const ContactForm = () => {
   const form = useRef(null);
@@ -26,13 +25,15 @@ const ContactForm = () => {
           e.target.reset();
         },
         (error) => {
-          console.log(PUBLIC_KEY);
           console.log(error.text);
         }
       );
   };
   return (
-    <div className="md:mt-30 flex items-center justify-center pt-28 lg:mt-5 ">
+    <div className="contact-me md:mt-30 flex items-center justify-around pt-28 lg:mt-5 ">
+      <div>
+        <h1 className=" font-bold md:text-6xl ">Get in touch!</h1>
+      </div>
       <form
         className="w-full max-w-sm md:max-w-lg "
         onSubmit={sendEmail}
