@@ -3,7 +3,7 @@ import Nav from "../components/Nav";
 
 export default function Home() {
   return (
-    <div className="app-top-lvl">
+    <div className="app-top-lvl h-screen">
       <Nav />
       <Hero />
     </div>

@@ -9,7 +9,7 @@
 
   body,
   html {
-    @apply bg-white dark:min-h-screen dark:bg-black;
+    @apply overflow-hidden bg-white dark:min-h-screen dark:bg-black;
   }
 
   ::selection {

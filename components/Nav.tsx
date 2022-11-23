@@ -35,7 +35,7 @@ const Nav = () => {
     }
   };
   return (
-    <div className="app-top-lvl mx-auto hidden pt-5 text-lg font-light sm:max-w-xl md:flex md:max-w-2xl lg:max-w-5xl">
+    <div className="app-top-lvl mx-auto hidden pt-5 text-lg font-light sm:max-w-xl md:flex md:max-w-2xl lg:max-w-4xl">
       <div>
         <Link className="group text-black dark:text-white" href="/">
           <span className="bg-gradient-to-r from-black to-black bg-[length:0%_2px] bg-left-bottom bg-no-repeat font-medium transition-all duration-500 ease-out group-hover:bg-[length:100%_2px] dark:from-white dark:to-white">
@@ -43,7 +43,7 @@ const Nav = () => {
           </span>
         </Link>
       </div>
-      <div className="mx-auto lg:ml-auto lg:mr-64">
+      <div className="mx-auto">
         <Link
           className="p-10 text-black dark:text-white dark:hover:text-gray-300"
           href="/about"
