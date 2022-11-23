@@ -31,11 +31,11 @@ const ContactForm = () => {
   };
   return (
     <div className="contact-me md:mt-30 flex items-center justify-around pt-28 lg:mt-5 ">
-      <div>
+      <div className="hidden sm:flex">
         <h1 className=" font-bold md:text-6xl ">Get in touch!</h1>
       </div>
       <form
-        className="w-full max-w-sm md:max-w-lg "
+        className="w-full max-w-sm px-10 md:max-w-lg md:px-0 "
         onSubmit={sendEmail}
         ref={form}
       >
