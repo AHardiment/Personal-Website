@@ -51,7 +51,6 @@ const ContactForm = () => {
               className="block w-full appearance-none rounded border border-gray-200 bg-gray-200 py-3 px-4 leading-tight text-gray-700 focus:border-gray-500 focus:bg-white focus:outline-none"
               id="grid-first-name"
               type="text"
-              placeholder="Jane"
               name="first_name"
             />
           </div>
@@ -66,7 +65,6 @@ const ContactForm = () => {
               className="block w-full appearance-none rounded border border-gray-200 bg-gray-200 py-3 px-4 leading-tight text-gray-700 focus:border-gray-500 focus:bg-white focus:outline-none"
               id="grid-last-name"
               type="text"
-              placeholder="Doe"
               name="last_name"
             />
           </div>
