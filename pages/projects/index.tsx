@@ -1,11 +1,13 @@
 import Footer from "../../components/Footer";
-import Hero from "../../components/Hero";
 import Nav from "../../components/Nav";
-import styles from "../../styles/Home.module.css";
+import Head from "next/head";
 
 export default function Home() {
   return (
     <div className="app-top-lvl">
+      <Head>
+        <title>Alex Hardiment</title>
+      </Head>
       <Nav />
       <Footer />
     </div>
