@@ -30,7 +30,7 @@ const ContactForm = () => {
       );
   };
   return (
-    <div className="contact-me md:mt-30 flex items-center justify-around pt-10 md:px-5 md:pt-32 lg:pt-24 ">
+    <div className="contact-me md:mt-30 flex items-center justify-around pt-5 md:px-5 md:pt-32 lg:pt-24 ">
       <div className="hidden sm:flex">
         <h1 className=" font-bold md:text-6xl ">Get in touch!</h1>
       </div>
