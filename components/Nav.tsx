@@ -43,7 +43,7 @@ const Nav = () => {
             <span className="text-xl">AJH</span>
           </Link>
         </div>
-        <GiHamburgerMenu className="mr-4 mt-3 h-8 w-8 text-white hover:rotate-6 md:hidden" />
+        <GiHamburgerMenu className="mr-4 mt-3 h-8 w-8 hover:rotate-6 dark:text-white md:hidden" />
       </div>
       <div className="app-top-lvl mx-auto hidden pt-5 text-lg font-light sm:max-w-xl md:flex md:max-w-2xl lg:max-w-4xl">
         <div>
