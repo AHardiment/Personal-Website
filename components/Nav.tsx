@@ -39,7 +39,7 @@ const Nav = () => {
       <div>
         <Link className="group text-black dark:text-white" href="/">
           <span className="bg-gradient-to-r from-black to-black bg-[length:0%_2px] bg-left-bottom bg-no-repeat font-medium transition-all duration-500 ease-out group-hover:bg-[length:100%_2px] dark:from-white dark:to-white">
-            AJH
+            AHardiment
           </span>
         </Link>
       </div>
