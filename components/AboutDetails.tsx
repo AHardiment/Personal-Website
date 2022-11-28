@@ -11,10 +11,8 @@ const AboutDetails = () => {
           in the UK.
         </p>
         <p className="text-justify md:mt-3 md:text-2xl">
-          I have always been adjacent to programming, with both my father and my
-          brother having been software engineers. After many years pursuing a
-          variety of careers, I decided to commit all of my energy to
-          programming once more.
+          Earlier this year, I rediscovered my passion for web development and
+          decided that this would be the moment I gave it my all.
         </p>
         <p className="text-justify md:mt-3 md:text-2xl">
           This site is a glimpse at that journey.
