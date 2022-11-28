@@ -5,6 +5,7 @@ import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
 import { BsSunFill } from "react-icons/bs";
 import { GiHamburgerMenu } from "react-icons/gi";
+import MobileNav from "./MobileNav";
 
 const Nav = () => {
   const { systemTheme, theme, setTheme } = useTheme();
@@ -35,6 +36,7 @@ const Nav = () => {
       );
     }
   };
+
   return (
     <div>
       <div className="flex justify-end">
@@ -43,7 +45,9 @@ const Nav = () => {
             <span className="text-xl">AJH</span>
           </Link>
         </div>
-        <GiHamburgerMenu className="mr-4 mt-3 h-8 w-8 hover:rotate-6 dark:text-white md:hidden" />
+        <div className="my-auto mr-5 font-medium md:hidden">
+          <MobileNav />
+        </div>
       </div>
       <div className="app-top-lvl mx-auto hidden pt-5 text-lg font-light sm:max-w-xl md:flex md:max-w-2xl lg:max-w-4xl">
         <div>

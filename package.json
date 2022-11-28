@@ -26,6 +26,7 @@
     "next-themes": "^0.2.1",
     "pure-react-carousel": "^1.30.1",
     "react": "18.2.0",
+    "react-burger-menu": "^3.0.8",
     "react-dom": "18.2.0",
     "react-hook-form": "^7.39.5",
     "react-icons": "^4.6.0",
@@ -34,6 +35,7 @@
   },
   "devDependencies": {
     "@types/node": "^18.11.9",
+    "@types/react-burger-menu": "^2.8.3",
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.19",
     "prettier": "^2.7.1",

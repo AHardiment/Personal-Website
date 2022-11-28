@@ -79,6 +79,29 @@ a {
   transition: 0.3s;
 }
 
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0%;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 100%;
+  }
+}
+
+.mobile-nav {
+  animation: slideInFromRight 0.2s ease-in-out;
+}
+
+.mobile-nav {
+  @apply fixed top-0 right-0 z-50 h-screen w-3/4 bg-white dark:bg-black;
+}
+
+.nav-item {
+  padding-bottom: 1rem;
+}
+
 /* arrow animate side to side */
 
 @keyframes arrow {
