@@ -95,7 +95,7 @@ a {
 }
 
 .mobile-nav {
-  @apply fixed top-0 right-0 z-50 h-screen w-3/4 bg-white dark:bg-black;
+  @apply fixed top-0 right-0 z-50 h-screen w-3/4 bg-white dark:bg-gray-900;
 }
 
 .nav-item {
