@@ -4,12 +4,12 @@
 
 @layer base {
   .app-top-lvl {
-    @apply bg-white text-gray-900 dark:bg-black dark:text-gray-100;
+    @apply bg-gray-100 text-zinc-900 dark:bg-zinc-900 dark:text-gray-100;
   }
 
   body,
   html {
-    @apply overflow-hidden bg-white dark:min-h-screen dark:bg-black;
+    @apply overflow-hidden bg-gray-100 dark:min-h-screen dark:bg-zinc-900;
   }
 
   ::selection {
