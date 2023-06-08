@@ -1,10 +1,8 @@
 import React from "react";
 import Link from "next/link";
-import { BsFillMoonStarsFill } from "react-icons/bs";
+import { BsFillMoonStarsFill, BsSunFill } from "react-icons/bs";
 import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
-import { BsSunFill } from "react-icons/bs";
-import { GiHamburgerMenu } from "react-icons/gi";
 import MobileNav from "./MobileNav";
 
 const Nav = () => {
